@@ -22,6 +22,12 @@ network_tags=$(curl -H "${METADATA_FLAVOR_HEADER}" -s "${METADATA_URL}/instance/
 cat <<EOF > /var/www/html/index.html
 <html><body>
 <h2>Welcome to your custom website.</h2>
+
+<br>
+insert an image or GIF
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+<br>
+
 <h3>Created with a direct input startup script!</h3>
 <p><b>Instance Name:</b> $(hostname -f)</p>
 <p><b>Instance Private IP Address: </b> $local_ipv4</p>
